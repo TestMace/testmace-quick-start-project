@@ -1,0 +1,25 @@
+type: Project
+name: Project
+environments:
+  active: null
+  environments:
+    stage: {}
+children:
+  - login
+  - create-post
+  - get-post
+variables:
+  domain: 'https://testmace-quick-start.herokuapp.com'
+authData:
+  type: inherit
+settings:
+  proxy:
+    enable: false
+requestData:
+  headers:
+    - isChecked: true
+      name: Authorization
+      value: 'Bearer ${$dynamicVar.token}'
+  disabledInheritedHeaders: []
+  strictSSL: 'No'
+cookies: []

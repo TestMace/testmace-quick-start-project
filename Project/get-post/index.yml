@@ -1,0 +1,24 @@
+children:
+  - Assertions
+variables: {}
+type: RequestStep
+assignVariables: []
+requestData:
+  request:
+    method: GET
+    url: '${domain}/posts/${$dynamicVar.postId}'
+  headers: []
+  disabledInheritedHeaders: []
+  params: []
+  body:
+    type: Json
+    jsonBody: ''
+    xmlBody: ''
+    textBody: ''
+    formData: []
+    file: ''
+    formURLEncoded: []
+  strictSSL: Inherit
+authData:
+  type: inherit
+name: get-post

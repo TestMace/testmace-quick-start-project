@@ -1,0 +1,10 @@
+children: []
+variables: {}
+type: Assertion
+assertions:
+  - disabled: false
+    type: compare
+    actualValue: '${$response.body.title}'
+    operator: equal
+    expectedValue: New testmace quick start post
+name: Assertions

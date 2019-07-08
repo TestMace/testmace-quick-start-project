@@ -1,0 +1,29 @@
+children: []
+variables: {}
+type: RequestStep
+assignVariables:
+  - assign:
+      type: reference
+      refNodePath: Project
+    path: body.token
+    variable: token
+requestData:
+  request:
+    method: POST
+    url: '${domain}/login'
+  headers: []
+  disabledInheritedHeaders:
+    - Authorization
+  params: []
+  body:
+    type: Json
+    jsonBody: '{"username": "admin", "password": "password"}'
+    xmlBody: ''
+    textBody: ''
+    formData: []
+    file: ''
+    formURLEncoded: []
+  strictSSL: Inherit
+authData:
+  type: inherit
+name: login

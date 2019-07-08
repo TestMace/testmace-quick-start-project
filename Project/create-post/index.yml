@@ -1,0 +1,28 @@
+children: []
+variables: {}
+type: RequestStep
+assignVariables:
+  - assign:
+      type: reference
+      refNodePath: Project
+    path: body.id
+    variable: postId
+requestData:
+  request:
+    method: POST
+    url: '${domain}/posts'
+  headers: []
+  disabledInheritedHeaders: []
+  params: []
+  body:
+    type: Json
+    jsonBody: '{"title": "New testmace quick start post"}'
+    xmlBody: ''
+    textBody: ''
+    formData: []
+    file: ''
+    formURLEncoded: []
+  strictSSL: Inherit
+authData:
+  type: inherit
+name: create-post
